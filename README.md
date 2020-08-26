@@ -8,15 +8,15 @@
 下载xshell或其他ssh工具并配置连接，可以省去每次都要ssh服务器端口之类的的麻烦，以xshell为例：
 新建一个会话用于连接服务器，配置服务器ip和端口：（以下是我的）
 
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/xshell1.png)
+![avatar](xshell1.png)
 
 设置账号密码
 
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/xshell2.png)
+![avatar](xshell2.png)
 
 之后还会继续配置隧道用于jupyter的端口转发，目前配置到这阶段应该能够连接到服务器的终端大概如下：（base为已经安装anaconda的情况）
 
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/Command1.jpg)
+![avatar](Command1.jpg)
 
 请注意目前是在/home文件夹下，为os所在的硬盘，数据等其他东西请放在/home1文件夹下，cd /home1/（你自己的文件夹）即可
 
@@ -56,11 +56,11 @@ https://github.com/burning846/rookie-helper/blob/master/jupyter-notebook/README.
 ### Step4：配置端口转发
 由于jupyter notebook只运行在服务器端，你需要把数据转发到自己的电脑上
 编辑你电脑上之前的那个xshell连接会话的属性，增加一个隧道：
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/xshell3.png)
+![avatar](xshell3.png)
 即进行端口转发把服务器的转发到自己这边如图（由于没有跳板机还比较简单）
 此时你的一个命令窗口应该在Py环境下执行这jupyter notebook大概是这样
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/Command2.jpg)
+![avatar](Command2.jpg)
 如果还需要命令行窗口就再开一个
 之后浏览器，打开 localhost:你转发的本地的端口号/ 即可打开jupyter如图
-![avatar](https://github.com/fgtmiao/jupyter-helper/raw/master/Browser.jpg)
+![avatar](Browser.jpg)
 PS：由于我新手的时候安装遇到了很多坑，尽管网络上有很多教程对新手来说还是很费时间我当时安装了几乎一天才弄明白在干嘛，故在此汇总希望能免除当前是新手的人的一部分麻烦
